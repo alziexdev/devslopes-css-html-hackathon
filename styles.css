@@ -1,0 +1,346 @@
+html {
+  background: mistyrose;
+}
+
+.photo-paper {
+  background-color: white;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.2);
+  height: 37.5rem;
+  width: 34.375rem;
+  position: absolute;
+  left: 33%;
+  z-index: 100;
+}
+
+.photo-paper div {
+  position: absolute;
+  height: 28rem;
+  width: 31.875rem;
+}
+
+.picture {
+  background-color: khaki;
+  border: 2px solid lightgray;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 2;
+}
+
+.picture .window {
+  height: 4rem;
+  width: 4rem;
+  background-color: skyblue;
+  position: absolute;
+  z-index: 3;
+  border: 0.625rem solid sienna;
+  box-shadow: inset 0.2rem -0.2rem 0 saddlebrown;
+}
+
+.picture .window.glass-one {
+  top: 2rem;
+  left: 7.5rem;
+}
+
+.picture .window.glass-two {
+  top: 2rem;
+  left: 12.5rem;
+}
+
+.picture .window.glass-three {
+  top: 7rem;
+  left: 7.5rem;
+}
+
+.picture .window.glass-four {
+  top: 7rem;
+  left: 12.5rem;
+}
+
+.picture .window.glass-one::after {
+  content: "";
+  height: 3rem;
+  width: 3rem;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 0% 0% 100% 0%;
+  left: 0.25rem;
+  box-shadow: 0 0 0.625rem yellow;
+}
+
+.picture .chair {
+  border-top: 7.82rem solid maroon;
+  border-left: 1.56rem solid transparent;
+  border-right: 1.56rem solid transparent;
+  height: 0;
+  width: 75px;
+  position: absolute;
+  z-index: 4;
+}
+
+.picture .chair::before {
+  content: "";
+  border-top: 6.5rem solid crimson;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  height: 0;
+  width: 40px;
+  position: absolute;
+  z-index: 5;
+  top: -6.5rem;
+  left: -0.4rem;
+}
+
+.picture .chair.chair-one {
+  top: 10.25rem;
+  left: 2rem;
+}
+
+.picture .chair.chair-two {
+  top: 10.25rem;
+  left: 15rem;
+}
+
+.picture .floor {
+  position: absolute;
+  z-index: 4;
+  height: 105px;
+  width: 100px;
+  bottom: 0px;
+  background-color: ivory;
+  right: 0px;
+  border-top: 8px groove sandybrown;
+}
+
+.picture .table {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  width: 0;
+  height: 0;
+  border-bottom: 10rem solid saddlebrown;
+  border-right: 7.5rem solid transparent;
+  border-left: 24.063rem solid saddlebrown;
+}
+
+.picture .hat-cone {
+  position: absolute;
+  z-index: 7;
+  width: 0;
+  height: 0;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  border-bottom: 5rem solid red;
+  border-radius: 50%;
+}
+
+.picture .hat-cone::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 3rem solid green;
+  border-radius: 50%;
+  z-index: 6;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  left: -1.8rem;
+}
+
+.picture .hat-cone::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 2rem solid red;
+  border-radius: 50%;
+  z-index: 7;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  left: -1rem;
+}
+
+.picture .hat-cone.hat-one {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.picture .hat-cone.hat-two {
+  bottom: 4rem;
+  left: 5rem;
+}
+
+.picture .hat-top {
+  height: 14px;
+  width: 14px;
+  background-color: gold;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 7;
+}
+
+.picture .hat-top.hat-one {
+  bottom: 5.5rem;
+  left: 3.02rem;
+}
+
+.picture .hat-top.hat-two {
+  bottom: 8.5rem;
+  left: 7.02rem;
+}
+
+.picture .plate {
+  position: absolute;
+  width: 12.5rem;
+  height: 6.25rem;
+  background: white;
+  border-radius: 6.25rem / 3.125rem;
+  bottom: 1.75rem;
+  z-index: 5;
+  left: 12.5rem;
+}
+
+.picture .cake {
+  width: 10rem;
+  height: 8.125rem;
+  border-radius: 100% / 5rem;
+  background: radial-gradient(55% 2.5rem at 50% 2.5rem, #ea2bcc4a 100%, #0000 0), radial-gradient(50% 2.5rem at 50% calc(100% - 2.5rem), #fff0 100%, #0000 0), #ffdeba;
+  position: absolute;
+  bottom: 2.5rem;
+  z-index: 8;
+  left: 13.75rem;
+}
+
+.picture .cherries div {
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 10;
+}
+
+.cherry-one {
+  right: 10.75rem;
+  bottom: 9.75rem;
+}
+
+.cherry-two {
+  right: 9.25rem;
+  bottom: 8.75rem;
+}
+
+.cherry-three {
+  right: 10.25rem;
+  bottom: 7.5rem;
+}
+
+.cherry-four {
+  right: 14.25rem;
+  bottom: 9.75rem;
+}
+
+.cherry-five {
+  right: 15.75rem;
+  bottom: 8.75rem;
+}
+
+.cherry-six {
+  right: 14.25rem;
+  bottom: 7.5rem;
+}
+
+.picture .candle {
+  width: 0.6rem;
+  height: 3rem;
+  border-radius: 100% / 0.4rem;
+  background: white;
+  position: absolute;
+  bottom: 8.5rem;
+  z-index: 8;
+  left: 18.45rem;
+  box-shadow: inset 0 -0.625rem 0 red;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.picture .candle::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 0.65rem;
+  border-radius: 100% / 0.3rem;
+  background: red;
+  box-shadow: 0px 1.125rem red;
+}
+
+.picture .candle::after {
+  content: "";
+  position: absolute;
+  width: 0.125rem;
+  height: 0.6rem;
+  border-radius: 100% / 0.3rem;
+  background: black;
+  top: -0.625rem;
+  left: 0.2rem;
+}
+
+.picture .flame {
+  position: absolute;
+  bottom: 11.75rem;
+  left: 18.35rem;
+  z-index: 9;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  border-left: 0.6rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-bottom: 1.5rem solid #ffad00;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem #ffad00;
+}
+
+.polaroid {
+  background-color: black;
+  top: 0rem;
+  left: 0rem;
+  z-index: 100;
+}
+
+.polaroid:hover {
+  animation-name: show-photo;
+  animation-duration: 30s;
+  cursor: pointer;
+}
+
+.caption {
+  font-family: "Nerko One";
+  font-size: 3.125rem;
+  text-align: center;
+  margin: 31rem auto;
+}
+
+@keyframes show-photo {
+  0% {
+    opacity: 100%;
+  }
+
+  10% {
+    opacity: 95%;
+    background-color: indigo;
+  }
+
+  20% {
+    opacity: 90%;
+  }
+
+  30% {
+    opacity: 80%;
+    background-color: dodgerblue;
+  }
+
+  35% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
